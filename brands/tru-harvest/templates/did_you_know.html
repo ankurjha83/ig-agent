@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8"><style>{{ css }}
+:root{--cw:{{ colorway.hex }};--cw-tint:{{ colorway.tint }}}
+
+/* ── Top white zone  0–760px ──────────────────────────────────── */
+.top{position:absolute;left:0;top:0;width:1080px;height:760px;
+  background:var(--white);overflow:hidden}
+
+/* Subtle concentric-ring watermark */
+.sketch{position:absolute;inset:0;opacity:.28;background:
+  repeating-radial-gradient(circle at 15% 110%,
+    transparent 0 38px, var(--sketch) 38px 40px)}
+
+/* "Did you know?" pill */
+.badge{position:absolute;left:80px;top:80px;
+  background:var(--forest);color:var(--white);
+  padding:13px 26px;border-radius:999px;
+  font-size:24px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+
+/* Fact — capped at 5 lines to prevent overflow */
+.fact{position:absolute;left:80px;top:172px;width:920px;
+  font-size:66px;font-weight:700;color:var(--forest);line-height:1.08;
+  max-height:360px;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical}
+
+/* Illustration — only rendered when valid inline SVG is provided */
+.ill{position:absolute;right:80px;bottom:56px;width:300px;height:200px;overflow:hidden}
+
+/* ── Bottom dark band  760–1350px ─────────────────────────────── */
+.bottom{position:absolute;left:0;top:760px;width:1080px;height:590px;
+  background:var(--forest)}
+.pname{position:absolute;left:80px;top:56px;
+  font-size:38px;font-weight:600;color:var(--white)}
+.src{position:absolute;left:80px;top:120px;width:740px;
+  font-size:25px;color:rgba(190,211,186,.82);line-height:1.55;
+  max-height:200px;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical}
+
+/* Logo in dark zone — override base absolute positioning */
+.logo{position:absolute;right:64px;bottom:52px;width:190px}
+</style></head><body><div class="canvas">
+
+<div class="top">
+  <div class="sketch"></div>
+  <div class="badge">Did you know?</div>
+  <div class="fact">{{ f.fact }}</div>
+  {% set svg = f.illustration_svg or '' %}
+  {% if svg[:1] == '<' %}
+    <div class="ill">{{ svg|safe }}</div>
+  {% endif %}
+</div>
+
+<div class="bottom">
+  <div class="pname">{{ f.product_name }}</div>
+  {% if f.source and f.source != f.product_name %}
+    <div class="src">{{ f.source }}</div>
+  {% endif %}
+  <img class="logo" src="{{ logo_white }}">
+</div>
+
+</div></body></html>

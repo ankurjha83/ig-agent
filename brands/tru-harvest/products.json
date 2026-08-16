@@ -1,0 +1,357 @@
+{
+  "brand_id": "tru-harvest",
+  "version": "0.1.0",
+  "notes": "Nutrition per 100g unless stated. Guardian may only allow claims derivable from these fields. Fill TODOs from labels; do not let agents guess.",
+  "claim_thresholds_per_100g": {
+    "source_of_protein_g": 12,
+    "high_protein_g": 20,
+    "source_of_fibre_g": 3,
+    "high_fibre_g": 6,
+    "low_sodium_mg": 120,
+    "sugar_free_g": 0.5,
+    "note": "Conservative thresholds; verify against current FSSAI Advertising & Claims Regulations before enabling any 'high/source of' claim."
+  },
+  "products": [
+    {
+      "sku": "WN-MEXMIX-250",
+      "line": "why-not",
+      "name": "Mexican Mix",
+      "pack": "250g pouch",
+      "ingredients": [
+        "Corn Puffs",
+        "Roasted Corn",
+        "Jowar Puffs",
+        "Oats Puffs",
+        "Pumpkin Seeds",
+        "Salt",
+        "Spices"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 380,
+        "fat_g": 10,
+        "sodium_mg": 200,
+        "cholesterol_mg": 0,
+        "carbohydrate_g": 30,
+        "protein_g": 20,
+        "fibre_g": 16
+      },
+      "allergens": "TODO",
+      "derived_claims_allowed": [
+        "high protein (20g/100g)",
+        "high fibre (16g/100g)",
+        "zero cholesterol",
+        "contains pumpkin seeds, jowar and oats puffs"
+      ],
+      "photo_refs": [
+        "assets/products/why-not/mexican-mix-front.jpg"
+      ],
+      "listing": {
+        "amazon_in": "TODO",
+        "flipkart": "TODO"
+      }
+    },
+    {
+      "sku": "WN-MASCRAN-250",
+      "line": "why-not",
+      "name": "Masala Cranberry",
+      "pack": "250g pouch",
+      "serving_size_g": 10,
+      "ingredients": [
+        "Dried Cranberries",
+        "Himalayan Pink Salt",
+        "Cumin",
+        "Sugar",
+        "Edible Vegetable Oil (Sunflower Oil) — sprayed for seasoning only"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 360,
+        "carbohydrate_g": 88,
+        "sugars_g": 65.6,
+        "fibre_g": 4.6,
+        "protein_g": 1.1,
+        "fat_g": 0.5,
+        "trans_fat_g": 0,
+        "saturated_fat_g": 0.2,
+        "poly_fat_g": 0.1,
+        "mono_fat_g": 0.2,
+        "sodium_mg": 4
+      },
+      "allergens": "Made in a facility that also processes tree nuts, peanuts, soy and other nuts",
+      "derived_claims_allowed": [
+        "low fat",
+        "very low sodium",
+        "source of fibre",
+        "no trans fat"
+      ],
+      "derived_claims_forbidden": [
+        "sugar-free",
+        "low sugar",
+        "healthy sweet"
+      ],
+      "photo_refs": [
+        "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-CRAN-STD",
+      "line": "berries",
+      "name": "Dried Cranberries (No Preservatives)",
+      "asin": "B0GHYM3PCG",
+      "pack": "jar",
+      "ingredients": "TODO (from label)",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "derived_claims_allowed": [
+        "no preservatives (per listing)"
+      ],
+      "derived_claims_forbidden": [
+        "antioxidant health benefits unless substantiated per FSSAI"
+      ],
+      "photo_refs": [
+        "product images/Copy_of_Dried_Cranberries_Mockup_Front.jpeg"
+      ],
+      "listing": {
+        "amazon_in": "https://www.amazon.in/dp/B0GHYM3PCG"
+      },
+      "colorway": "Cranberry Red"
+    },
+    {
+      "sku": "TH-CRAN-PREM",
+      "line": "berries",
+      "name": "Premium Dried Cranberries (No Preservatives)",
+      "asin": "B0GQ51DLG7",
+      "pack": "jar",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "derived_claims_allowed": [
+        "no preservatives (per listing)"
+      ],
+      "photo_refs": [],
+      "listing": {
+        "amazon_in": "https://www.amazon.in/dp/B0GQ51DLG7"
+      },
+      "colorway": "Cranberry Red"
+    },
+    {
+      "sku": "WN-MASNUTS-250",
+      "line": "why-not",
+      "name": "Masala Nuts",
+      "pack": "250g pouch",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "Contains nuts",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "WN-TMFP-250",
+      "line": "why-not",
+      "name": "Trail Mix Fruit Punch",
+      "pack": "250g pouch",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "WN-FRUITCOCK-250",
+      "line": "why-not",
+      "name": "Fruit Cocktail",
+      "pack": "250g pouch",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "WN-ROASTNUTS-250",
+      "line": "why-not",
+      "name": "Roasted Nuts",
+      "pack": "250g pouch",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "Contains nuts",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "TH-PUMPKIN-TODO",
+      "line": "seeds",
+      "name": "Pumpkin Seeds",
+      "pack": "pouch 22x15cm (TODO grams); jars 250g/400g/800g",
+      "ingredients": [
+        "Pumpkin Seeds"
+      ],
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "TH-ALMOND-TODO",
+      "line": "nuts",
+      "name": "Almonds",
+      "pack": "TODO",
+      "ingredients": [
+        "Almonds"
+      ],
+      "nutrition_per_100g": "TODO",
+      "allergens": "Tree nuts",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "TH-CASHEW-TODO",
+      "line": "nuts",
+      "name": "Cashews",
+      "pack": "TODO",
+      "ingredients": [
+        "Cashews"
+      ],
+      "nutrition_per_100g": "TODO",
+      "allergens": "Tree nuts",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "TH-PISTA-TODO",
+      "line": "nuts",
+      "name": "Pistachios",
+      "pack": "TODO",
+      "ingredients": [
+        "Pistachios"
+      ],
+      "nutrition_per_100g": "TODO",
+      "allergens": "Tree nuts",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "TR-GIFT-TODO",
+      "line": "treasures",
+      "name": "Treasures gift box (TODO variants)",
+      "pack": "TODO",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "n/a — see components",
+      "photo_refs": [],
+      "listing": {}
+    },
+    {
+      "sku": "TH-BLUE",
+      "line": "berries",
+      "name": "Dried Blueberries",
+      "pack": "jar",
+      "colorway": "Blueberry Purple",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Dried_Blueberries_Mockup_Front.jpeg"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-HAZEL",
+      "line": "nuts",
+      "name": "Hazelnuts",
+      "pack": "jar",
+      "colorway": "Hazelnut Sand",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Hazelnut_Mockup_Front.jpeg"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-BRAZIL",
+      "line": "nuts",
+      "name": "Brazil Nuts",
+      "pack": "jar",
+      "colorway": "Brazil Caramel",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Brazil_Nuts_Mockup_Front.jpeg"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-TRAIL",
+      "line": "mixes",
+      "name": "Trail Mix",
+      "pack": "jar",
+      "colorway": "Trail Red",
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Trail_Mix_Mockup_Front.jpeg"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-MAMRA",
+      "line": "nuts",
+      "name": "Almonds (Mamra) / मामरा बादाम",
+      "pack": "green pouch",
+      "colorway": null,
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Mamra.jpg"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-FOXTAIL",
+      "line": "millets",
+      "name": "Foxtail Millet / कंगनी",
+      "pack": "green pouch",
+      "colorway": null,
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Mockup__TH_Foxtail_Millet__Kangani__Front.jpg"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-MASOOR",
+      "line": "pulses",
+      "name": "Lal Masoor",
+      "pack": "green pouch",
+      "colorway": null,
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Lal_Masoor_Mockup_Front.png"
+      ],
+      "listing": {}
+    },
+    {
+      "sku": "TH-FLAX",
+      "line": "seeds",
+      "name": "Flax Seeds / अलसी",
+      "pack": "green pouch",
+      "colorway": null,
+      "ingredients": "TODO",
+      "nutrition_per_100g": "TODO",
+      "allergens": "TODO",
+      "photo_refs": [
+        "product images/Copy_of_Mockup_TH_Flax_Seeds_Front.jpg"
+      ],
+      "listing": {}
+    }
+  ],
+  "store_url": "https://www.amazon.in/stores/TruHarvest/page/2E07DDE0-91DA-4E56-BE27-63E3BCA07329"
+}

@@ -1,0 +1,103 @@
+{
+  "slot_id": "2026-08-18-01",
+  "variants": [
+    {
+      "slot_id": "2026-08-18-01",
+      "version": 1,
+      "caption": {
+        "hook": "Very low sodium. Big on flavour.",
+        "body": "Masala Cranberry: sweet-tart dried cranberries kissed with cumin and Himalayan pink salt. Just 4mg sodium per 100g, so the fruit shines through. Snack smarter at 4pm.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#HealthySnacking",
+          "#WhyNotSnacks",
+          "#OfficeSnacks",
+          "#DryFruits"
+        ],
+        "alt_text": "Tru Harvest Why Not? Masala Cranberry 250g pouch on a wooden surface with loose cranberries. Text reads: Very low sodium. Big on flavour.",
+        "full_text": "Very low sodium. Big on flavour.\n\nMasala Cranberry: sweet-tart dried cranberries kissed with cumin and Himalayan pink salt. Just 4mg sodium per 100g, so the fruit shines through. Snack smarter at 4pm.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #HealthySnacking #WhyNotSnacks #OfficeSnacks #DryFruits"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+        }
+      ],
+      "render": {
+        "template_id": "did_you_know",
+        "fields": {
+          "fact": "Very low sodium. Big on flavour.\n\nJust 4mg sodium per 100g — so the sweet-tart cranberry and warm spices do the talking.",
+          "source": "Nutrition data: Tru Harvest Masala Cranberry",
+          "illustration_svg": "",
+          "headline": "Very low sodium. Big on flavour.",
+          "subhead": "Masala Cranberry: sweet-tart dried cranberries kissed with cumin and Himalayan pink salt. Just 4mg sodium per 100g, so the fruit shines thro",
+          "cta": "Find us on Amazon India — link in bio.",
+          "product_name": "Masala Cranberry",
+          "sku": "WN-MASCRAN-250",
+          "title": "Very low sodium. Big on flavour.",
+          "heading": "",
+          "body": "Masala Cranberry: sweet-tart dried cranberries kissed with cumin and Himalayan pink salt. Just 4mg sodium per 100g, so the fruit shines through. Snack smarter at 4pm.",
+          "page": "1/1",
+          "image_1": "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+        },
+        "export_urls": [
+          "https://storage.truharvest.in/posts/2026-08-18-01-v1.png"
+        ]
+      },
+      "reel": {},
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [],
+      "notes_for_humans": "Using real product photo from library. SVG illustration: flat-vector cranberries + cumin seeds in Why Not? playful style. Template applies green-pouch system colors.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "a8a50db4f6a7fd90",
+      "publish_at_local": "2026-08-18T12:30",
+      "product_sku": "WN-MASCRAN-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "2026-08-18-01",
+      "producer_id": "A-claude",
+      "verdict": "PASS",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "did_you_know"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        }
+      ],
+      "reason_for_humans": "ok"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-16T18:22:02.146627"
+}

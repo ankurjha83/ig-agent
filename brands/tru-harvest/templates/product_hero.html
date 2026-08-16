@@ -1,0 +1,67 @@
+<!doctype html><html><head><meta charset="utf-8"><style>{{ css }}
+:root{--cw:{{ colorway.hex }};--cw-tint:{{ colorway.tint }}}
+
+/* ── Zone 1: Image / colour hero  0–620px ─────────────────────── */
+.hero{position:absolute;left:0;top:0;width:1080px;height:620px;
+  background:var(--cw);overflow:hidden}
+.hero img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-glow{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(70% 60% at 35% 30%,rgba(255,255,255,.13),transparent 70%)}
+/* no-photo fallback: large transparent product name as watermark */
+.hero-text{position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;padding:56px;gap:20px}
+.hero-text .pname{font-size:26px;font-weight:300;letter-spacing:.22em;
+  text-transform:uppercase;color:rgba(255,255,255,.7)}
+.hero-text .bigword{font-size:136px;font-weight:700;line-height:.9;letter-spacing:-.02em;
+  color:rgba(255,255,255,.13);text-align:center}
+
+/* ── Zone 2: White text panel  624–1228px ─────────────────────── */
+.panel{position:absolute;left:0;top:624px;width:1080px;height:604px;
+  background:var(--white);padding:52px 72px 52px;overflow:hidden}
+.h1{font-size:70px;color:var(--ink);line-height:1.06;letter-spacing:-.01em;
+  max-height:308px;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical}
+.sub{margin-top:14px;font-size:28px;font-weight:400;color:#444;line-height:1.4;
+  max-height:82px;overflow:hidden;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.cta{position:absolute;right:72px;bottom:52px;
+  background:var(--forest);color:var(--white);
+  padding:16px 28px;border-radius:999px;font-size:24px;font-weight:600;
+  white-space:nowrap;max-width:500px;overflow:hidden;text-overflow:ellipsis}
+
+/* ── Zone 3: Footer  1228–1350px ─────────────────────────────── */
+.footer{position:absolute;left:0;top:1228px;width:1080px;height:122px;
+  background:var(--forest);display:flex;align-items:center;padding:0 72px;gap:24px}
+.pq{flex:1;color:rgba(255,255,255,.75);font-size:20px;font-weight:300;
+  letter-spacing:.18em;text-transform:uppercase}
+/* override base .logo which uses position:absolute */
+.footer .logo{position:static !important;width:150px;flex-shrink:0}
+</style></head><body><div class="canvas">
+
+<!-- Hero zone -->
+<div class="hero">
+  {% if f.image_1 %}
+    <img class="photo" src="{{ f.image_1 }}">
+  {% else %}
+    <div class="hero-text">
+      <div class="pname">{{ f.product_name }}</div>
+      <div class="bigword">{{ (f.product_name or '').split()[0] }}</div>
+    </div>
+  {% endif %}
+  <div class="hero-glow"></div>
+</div>
+
+<!-- Text panel -->
+<div class="panel">
+  <div class="h1">{{ f.headline }}</div>
+  {% if f.subhead %}<div class="sub">{{ f.subhead }}</div>{% endif %}
+  {% if f.cta %}<div class="cta">{{ f.cta }}</div>{% endif %}
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <span class="pq">Premium Quality &middot; 100% Natural Foods</span>
+  <img class="logo" src="{{ logo_white }}">
+</div>
+
+</div></body></html>

@@ -1,0 +1,102 @@
+{
+  "slot_id": "2026-08-22-01",
+  "variants": [
+    {
+      "slot_id": "2026-08-22-01",
+      "version": 1,
+      "caption": {
+        "hook": "Masala cranberry: snack first, healthy second.",
+        "body": "Sweet meets savory in every bite. Dried cranberries dusted with cumin and pink Himalayan salt—crunchy, tangy, and made for 4pm cravings. No guilt, just good flavor.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "250g pouch of Why Not? Masala Cranberry showing dried cranberries with cumin and pink Himalayan salt seasoning",
+        "full_text": "Masala cranberry: snack first, healthy second.\n\nSweet meets savory in every bite. Dried cranberries dusted with cumin and pink Himalayan salt—crunchy, tangy, and made for 4pm cravings. No guilt, just good flavor.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "Masala Cranberry",
+          "subhead": "Sweet meets savory. Every bite.",
+          "image_1": "product images/Copy of Dried Cranberries_Mockup Front.jpeg",
+          "cta": "Find us on Amazon India",
+          "fact": "Masala cranberry: snack first, healthy second.",
+          "product_name": "Masala Cranberry",
+          "source": "Sweet meets savory in every bite. Dried cranberries dusted with cumin and pink Himalayan salt—crunchy, tangy, and made for 4pm cravings. No guilt, just good flavor.",
+          "sku": "WN-MASCRAN-250",
+          "title": "Masala cranberry: snack first, healthy second.",
+          "heading": "",
+          "body": "Sweet meets savory in every bite. Dried cranberries dusted with cumin and pink Himalayan salt—crunchy, tangy, and made for 4pm cravings. No guilt, just good flavor.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "https://cdn.truharvest.pipeline/2026-08-22-01_v1_hero.png"
+        ]
+      },
+      "reel": {},
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [],
+      "notes_for_humans": "Used real product photo from library. Template renders product with brand-locked typography and Why Not? playful voice per sub-brand personality.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "7bd941dd2a4f2384",
+      "publish_at_local": "2026-08-22T12:30",
+      "product_sku": "WN-MASCRAN-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "2026-08-22-01",
+      "producer_id": "A-claude",
+      "verdict": "PASS",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        }
+      ],
+      "reason_for_humans": "ok"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-16T18:23:04.873107"
+}

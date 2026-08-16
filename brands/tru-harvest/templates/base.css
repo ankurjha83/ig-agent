@@ -1,0 +1,19 @@
+:root{
+  --forest:#0C4522; --harvest:#205811; --leaf:#85AA53; --sketch:#BED3BA; --ink:#111111; --white:#FFFFFF; --cream:#F6F1E7;
+  --cw:#0C4522; --cw-tint:#F6F1E7;
+  --font-head:"Poppins","Helvetica Neue",Arial,sans-serif; --font-body:"Poppins","Helvetica Neue",Arial,sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden;font-family:var(--font-body);color:var(--ink);background:var(--white)}
+.canvas{position:relative;width:1080px;height:1350px;overflow:hidden}
+.band{background:var(--forest);color:var(--white)}
+.tile{background:var(--white);border-radius:28px}
+.dashed{border-top:3px dashed rgba(255,255,255,.85)}
+.h1{font-family:var(--font-head);font-weight:700;line-height:1.05;letter-spacing:-.01em}
+.caps{font-weight:300;letter-spacing:.18em;text-transform:uppercase}
+.logo{position:absolute;right:56px;bottom:48px;width:180px}
+.swirl{position:absolute;inset:0;background:
+  radial-gradient(60% 40% at 15% 20%, rgba(255,255,255,.10), transparent 60%),
+  radial-gradient(50% 50% at 85% 80%, rgba(0,0,0,.08), transparent 60%);}
+img.photo{object-fit:cover;width:100%;height:100%;display:block}

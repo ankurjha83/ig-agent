@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+ <key>Label</key><string>com.truharvest.igagent</string>
+ <key>ProgramArguments</key><array><string>/bin/zsh</string><string>-lc</string><string>cd "$HOME/Desktop/Ankur Projects/Insta Agent" && source .venv/bin/activate && python -m src.bot</string></array>
+ <key>RunAtLoad</key><true/><key>KeepAlive</key><true/>
+ <key>StandardOutPath</key><string>/tmp/igagent.log</string><key>StandardErrorPath</key><string>/tmp/igagent.err</string>
+</dict></plist>

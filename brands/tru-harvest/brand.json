@@ -1,0 +1,516 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "brand_id": "tru-harvest",
+  "version": "0.1.0",
+  "updated": "2026-08-16",
+  "identity": {
+    "name": "Tru Harvest",
+    "legal_entity": "Cibus Agro Industries",
+    "tagline": "100% NATURAL FOODS",
+    "positioning": "Honest, everyday healthy snacking — seeds, berries, nuts and trail mixes for Indian households, sold on Amazon India and Flipkart.",
+    "sub_brands": [
+      {
+        "id": "why-not",
+        "name": "Why Not?",
+        "tagline": "POP · CRUNCH · REPEAT",
+        "line_2": "Not your regular snack!",
+        "personality": "playful, punchy, younger voice; still under Tru Harvest quality promise",
+        "products": [
+          "Mexican Mix",
+          "Masala Nuts",
+          "Masala Cranberry",
+          "Trail Mix Fruit Punch",
+          "Fruit Cocktail",
+          "Roasted Nuts"
+        ]
+      },
+      {
+        "id": "treasures",
+        "name": "Treasures by Tru Harvest",
+        "personality": "premium gifting, festive, warm",
+        "products": [
+          "gift boxes / hampers — TODO: list SKUs"
+        ]
+      }
+    ],
+    "product_lines": [
+      "Green-pouch staples: seeds (pumpkin, flax), pulses (lal masoor), millets (foxtail/kangani), nuts (Mamra almonds)",
+      "Colorway jars: dried cranberries, dried blueberries, hazelnuts, brazil nuts, trail mix; plus almonds, cashews, pistachios",
+      "Why Not? snacks",
+      "Treasures gifting"
+    ],
+    "marketplaces": [
+      "Amazon India",
+      "Flipkart"
+    ],
+    "website": "TODO",
+    "contact_email": "wecare@truharvest.in",
+    "fssai_license": "13323003000128",
+    "address": "105 HUDA Market, Sector 40, Gurugram, Haryana 122001"
+  },
+  "visual": {
+    "logo": {
+      "description": "Two-line 'Tru / Harvest' wordmark in a heavy rounded sans (custom); small bright-green leaf tucked after 'Tru' with ® mark. Pouch version: large forest-green wordmark + '100% NATURAL FOODS' tagline over farm sketch. Jar version: compact wordmark in a white rounded tile.",
+      "primary_file": "assets/logo/truharvest-primary.png",
+      "reverse_file": "assets/logo/truharvest-white.png",
+      "leaf_recolor_allowed": true,
+      "placement": "bottom-right or top-left, min 8% of canvas width, clear space = leaf height",
+      "never": [
+        "stretch",
+        "rotate",
+        "drop shadow",
+        "outline",
+        "place on busy photo without scrim"
+      ],
+      "mono_file": "assets/logo/truharvest-mono-green.png",
+      "icon_file": "assets/logo/leaf-only.png",
+      "master_source": "TruHarvest_Logo-01.png (1046x878 PNG; ask designer for SVG/AI)"
+    },
+    "palette": {
+      "primary": {
+        "name": "Forest Green",
+        "hex": "#0C4522",
+        "use": "wordmark, bands, dark panels (master logo file; pack prints slightly darker #104304)"
+      },
+      "primary_light": {
+        "name": "Harvest Green",
+        "hex": "#205811",
+        "use": "pouch lower panel, secondary green"
+      },
+      "leaf": {
+        "name": "Leaf Olive",
+        "hex": "#85AA53",
+        "use": "logo leaf, small accents only (bright #3CC414 appears on some packs; #85AA53 is the master)"
+      },
+      "sketch_grey": {
+        "name": "Sketch Grey",
+        "hex": "#BED3BA",
+        "use": "farm line-art, tagline on pouch, hairlines"
+      },
+      "neutral_light": {
+        "name": "White",
+        "hex": "#FFFFFF"
+      },
+      "neutral_dark": {
+        "name": "Ink",
+        "hex": "#111111",
+        "use": "product names on jar labels"
+      },
+      "colorways": [
+        {
+          "name": "Cranberry Red",
+          "hex": "#852C2E",
+          "tint": "#FBCAC3",
+          "use": "Dried Cranberries"
+        },
+        {
+          "name": "Trail Red",
+          "hex": "#992B2A",
+          "tint": "#ECEAED",
+          "use": "Trail Mix"
+        },
+        {
+          "name": "Blueberry Purple",
+          "hex": "#6A629E",
+          "tint": "#BEBDDC",
+          "use": "Dried Blueberries"
+        },
+        {
+          "name": "Hazelnut Sand",
+          "hex": "#D4BB9D",
+          "tint": "#F4CF7E",
+          "use": "Hazelnuts"
+        },
+        {
+          "name": "Brazil Caramel",
+          "hex": "#CCA57E",
+          "tint": "#F4D793",
+          "use": "Brazil Nuts"
+        },
+        {
+          "name": "Teal / Navy / Terracotta / Purple / Brown",
+          "hex": "TODO",
+          "use": "pumpkin-seed pouch colorways under evaluation"
+        }
+      ],
+      "why_not_accents": [
+        "#E84118",
+        "#FBC531"
+      ],
+      "treasures_accents": [
+        "#B08D3C",
+        "#104304"
+      ],
+      "guardian_tolerance": {
+        "delta_e_max": 12,
+        "min_primary_coverage_pct": 5
+      }
+    },
+    "typography": {
+      "wordmark": {
+        "family": "custom heavy rounded sans (logo is an image asset — never re-typeset)",
+        "canva_closest": "Baloo 2 ExtraBold / Fredoka Bold"
+      },
+      "headline": {
+        "family": "Poppins",
+        "weight": "700",
+        "case": "sentence",
+        "note": "matches bold black product names on jar labels"
+      },
+      "body": {
+        "family": "Poppins",
+        "weight": "400"
+      },
+      "label_caps": {
+        "family": "Poppins",
+        "weight": "300",
+        "case": "upper",
+        "tracking": "+15%",
+        "note": "'PREMIUM QUALITY' style"
+      },
+      "hindi": {
+        "family": "Poppins Devanagari / Mukta",
+        "note": "pouch bands show English | Hindi names"
+      },
+      "why_not_headline": {
+        "family": "Poppins",
+        "weight": "900",
+        "case": "upper"
+      }
+    },
+    "photography": {
+      "style": "natural light, warm, top-down or 45°, real textures (wood, linen, stone), Indian kitchen context welcome",
+      "avoid": [
+        "neon",
+        "clinical white studio",
+        "cluttered props",
+        "stock-looking hands"
+      ],
+      "real_product_library": "product images/ (repo root) — pouch mockups: Mamra almonds, foxtail millet, lal masoor, flax seeds; jar mockups: cranberries, blueberries, hazelnuts, brazil nuts, trail mix",
+      "packaging_rule": "NEVER show AI-generated packaging. Any image showing a pouch/jar must use a real product photo. Generative images are for ingredients, ambience, lifestyle only."
+    },
+    "templates": {
+      "provider": "html",
+      "dir": "templates/",
+      "css_vars": "templates/base.css",
+      "render": "playwright (png 1080x1350 / 1080x1080 / 1080x1920); ffmpeg for reels",
+      "list": [
+        {
+          "id": "product_hero",
+          "system": "either",
+          "fields": [
+            "headline",
+            "subhead",
+            "image_1",
+            "cta"
+          ],
+          "formats": [
+            "1080x1350"
+          ]
+        },
+        {
+          "id": "ingredient_carousel",
+          "system": "either",
+          "fields": [
+            "title",
+            "slides[] (heading, body, image)"
+          ],
+          "formats": [
+            "1080x1350"
+          ]
+        },
+        {
+          "id": "did_you_know",
+          "system": "green_pouch",
+          "fields": [
+            "fact",
+            "source",
+            "illustration_svg"
+          ],
+          "formats": [
+            "1080x1350"
+          ]
+        },
+        {
+          "id": "quote_card",
+          "system": "green_pouch",
+          "fields": [
+            "quote",
+            "attribution"
+          ],
+          "formats": [
+            "1080x1080"
+          ]
+        },
+        {
+          "id": "offer",
+          "system": "colorway_jar",
+          "fields": [
+            "headline",
+            "price_line",
+            "cta",
+            "image_1",
+            "colorway"
+          ],
+          "formats": [
+            "1080x1350",
+            "1080x1920"
+          ]
+        },
+        {
+          "id": "reel_cover",
+          "system": "either",
+          "fields": [
+            "headline",
+            "image_1"
+          ],
+          "formats": [
+            "1080x1920"
+          ]
+        },
+        {
+          "id": "why_not_flavor",
+          "system": "why_not",
+          "fields": [
+            "flavor",
+            "punchline",
+            "image_1"
+          ],
+          "formats": [
+            "1080x1350"
+          ]
+        },
+        {
+          "id": "treasures_gift",
+          "system": "treasures",
+          "fields": [
+            "occasion",
+            "headline",
+            "image_1"
+          ],
+          "formats": [
+            "1080x1350"
+          ]
+        }
+      ]
+    },
+    "packaging_systems": {
+      "note": "Two live systems observed Aug 2026. Guardian must pick the right one per product line.",
+      "green_pouch": {
+        "lines": [
+          "seeds",
+          "pulses",
+          "millets",
+          "staple nuts (e.g. Mamra almonds)"
+        ],
+        "look": "white upper panel with light-grey farm line-sketch, large forest-green two-line wordmark + bright leaf, '100% NATURAL FOODS' tagline, forest-green product-name band with English | Hindi name, deep-green lower panel"
+      },
+      "colorway_jar": {
+        "lines": [
+          "dried berries",
+          "premium nuts",
+          "trail mix"
+        ],
+        "look": "transparent PET jar; label = product colorway background with subtle darker swirl, white rounded logo tile (compact wordmark), white dashed rule, white rounded panel with flat-vector product illustration + bold black product name, 'PREMIUM QUALITY' in spaced caps"
+      }
+    },
+    "illustration": {
+      "style": "flat vector, 2–3 tone, soft highlight, no outlines — matches jar-label product art",
+      "source": "Claude-generated SVG per post, palette-locked to brand vars; stored in assets/illustrations/",
+      "never": "photoreal AI images of packaging"
+    },
+    "stock": {
+      "providers": [
+        "pexels",
+        "unsplash"
+      ],
+      "use": "ambience only (kitchen, table, textures); must be reviewed like any asset"
+    }
+  },
+  "voice": {
+    "tone": [
+      "warm",
+      "plain-spoken",
+      "confident",
+      "lightly witty",
+      "never preachy"
+    ],
+    "person": "we (the brand); speak to 'you'",
+    "reading_level": "simple, short sentences",
+    "language": "English; Hinglish phrases allowed sparingly for Why Not?",
+    "emoji_policy": "max 2 per caption; none in Treasures posts",
+    "do": [
+      "lead with a concrete benefit or a curiosity hook",
+      "name the ingredient, not the buzzword",
+      "invite a small action (save, try, tag someone)",
+      "mention Amazon/Flipkart availability, not price, unless it's an offer post"
+    ],
+    "dont": [
+      "medical or cure claims",
+      "'superfood', 'detox', 'guilt-free', 'clean eating'",
+      "shaming language about food or bodies",
+      "competitor names",
+      "ALL CAPS captions (except Why Not? headlines)"
+    ],
+    "sample_lines": [
+      "Pumpkin seeds: small, crunchy, and doing a lot of quiet work.",
+      "The trail mix that finishes before the movie does.",
+      "Why Not? Because 4pm deserves better."
+    ]
+  },
+  "compliance": {
+    "regulator": "FSSAI (India)",
+    "banned_claim_patterns": [
+      "cure[s]?",
+      "treat[s]?",
+      "prevent[s]?",
+      "boost[s]? immunity",
+      "burn[s]? fat",
+      "weight loss",
+      "detox",
+      "clinically proven",
+      "doctor recommended",
+      "sugar[- ]free(?! label says)",
+      "100% organic(?! certified)"
+    ],
+    "allowed_claims_source": "only from label / nutrition table in product data; 'source of fibre/protein' only if per-100g thresholds met",
+    "always_disclose": [
+      "allergen note when nuts/seeds shown as snack"
+    ],
+    "nutrition_data_ref": "brands/tru-harvest/products.json"
+  },
+  "content": {
+    "pillars": [
+      {
+        "id": "ingredient_truth",
+        "share": 0.3,
+        "desc": "what's inside, where it comes from, how to use it"
+      },
+      {
+        "id": "everyday_snacking",
+        "share": 0.25,
+        "desc": "moments: 4pm, tiffin, travel, movie night"
+      },
+      {
+        "id": "why_not",
+        "share": 0.2,
+        "desc": "playful flavor-led posts for the Why Not? line"
+      },
+      {
+        "id": "recipes_uses",
+        "share": 0.15,
+        "desc": "3-ingredient uses, toppings, mixes"
+      },
+      {
+        "id": "gifting_seasonal",
+        "share": 0.1,
+        "desc": "Treasures, festivals, Diwali, Rakhi, New Year"
+      }
+    ],
+    "formats": {
+      "reel": 0.4,
+      "carousel": 0.35,
+      "single_image": 0.25
+    },
+    "cadence": {
+      "posts_per_week": 5,
+      "stories_per_week": 3,
+      "post_days": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat"
+      ],
+      "post_time_local": "12:30",
+      "timezone": "Asia/Kolkata"
+    },
+    "seasonal_calendar": [
+      {
+        "when": "Aug",
+        "event": "Raksha Bandhan (gifting)"
+      },
+      {
+        "when": "Sep-Oct",
+        "event": "Navratri, Diwali (Treasures push)"
+      },
+      {
+        "when": "Jan",
+        "event": "New Year healthy start"
+      },
+      {
+        "when": "Prime Day / Big Billion Days",
+        "event": "offer posts (dates TODO)"
+      }
+    ],
+    "hashtags": {
+      "always": [
+        "#TruHarvest",
+        "#100PercentNaturalFoods"
+      ],
+      "pool": [
+        "#HealthySnacking",
+        "#TrailMix",
+        "#PumpkinSeeds",
+        "#DryFruits",
+        "#IndianSnacks",
+        "#WhyNotSnacks",
+        "#OfficeSnacks",
+        "#TiffinIdeas"
+      ],
+      "max_per_post": 8
+    },
+    "cta_options": [
+      "Save this for your next grocery run",
+      "Available on Amazon and Flipkart",
+      "Tag your 4pm snack partner",
+      "Which flavour first?"
+    ],
+    "generative_budget_per_week": {
+      "claude_svg_illustrations": 10,
+      "stock_lookups": 10
+    }
+  },
+  "channels": {
+    "instagram": {
+      "handle": "@seenfromseoul (TESTING ONLY — switch to brand handle before launch)",
+      "ig_user_id": "TODO",
+      "fb_page_id": "TODO",
+      "note": "@under999club is a separate community account — not this pipeline",
+      "meta_app_name": "IndoVista"
+    },
+    "discord": {
+      "guild_id": "1538579259017269428",
+      "channels": {
+        "brand": "1538579350880919703",
+        "calendar": "1538579383034323014",
+        "review": "1538579402001223690",
+        "published": "1538579435756716102",
+        "insights": "1538579459269992550",
+        "ops": "1538579480619257946"
+      },
+      "approvers": [
+        "700765101510099025",
+        "TODO_discord_user_id_swati"
+      ],
+      "reactions": {
+        "approve": "✅",
+        "revise": "✏️",
+        "reject": "❌"
+      }
+    }
+  },
+  "learning": {
+    "insights_file": "brands/tru-harvest/insights.md",
+    "kpis": [
+      "reach",
+      "saves",
+      "shares",
+      "profile_visits",
+      "follows",
+      "link_clicks"
+    ],
+    "north_star": "saves per post (proxy for content worth keeping)",
+    "review_cadence": "weekly, Sunday 06:00 KST"
+  }
+}

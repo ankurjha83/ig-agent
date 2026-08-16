@@ -1,0 +1,102 @@
+{
+  "slot_id": "2026-08-20-01",
+  "variants": [
+    {
+      "slot_id": "2026-08-20-01",
+      "version": 1,
+      "caption": {
+        "hook": "The 4pm snack that doesn't need justification.",
+        "body": "Masala Cranberry — tart, tangy, and just the right amount of spice. Cumin and pink salt meet dried cranberries in your new favorite pouch. Pops open, finishes fast.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "Tru Harvest Why Not? Masala Cranberry 250g pouch on white background, dried cranberries visible through window, forest green and colorful branding.",
+        "full_text": "The 4pm snack that doesn't need justification.\n\nMasala Cranberry — tart, tangy, and just the right amount of spice. Cumin and pink salt meet dried cranberries in your new favorite pouch. Pops open, finishes fast.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "The 4pm snack that doesn't need justification.",
+          "subhead": "Masala Cranberry · Tart meets spice",
+          "image_1": "product images/Copy of Dried Cranberries_Mockup Front.jpeg",
+          "cta": "Available on Amazon India",
+          "fact": "The 4pm snack that doesn't need justification.",
+          "product_name": "Masala Cranberry",
+          "source": "Masala Cranberry — tart, tangy, and just the right amount of spice. Cumin and pink salt meet dried cranberries in your new favorite pouch. Pops open, finishes fast.",
+          "sku": "WN-MASCRAN-250",
+          "title": "The 4pm snack that doesn't need justification.",
+          "heading": "",
+          "body": "Masala Cranberry — tart, tangy, and just the right amount of spice. Cumin and pink salt meet dried cranberries in your new favorite pouch. Pops open, finishes fast.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "https://content.truharvest.in/renders/2026-08-20-01-v1.png"
+        ]
+      },
+      "reel": {},
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [],
+      "notes_for_humans": "Using real product photo per packaging rule. Template renders 1080×1350 feed post with Why Not? playful voice.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "fa69ba8a3e5cd74f",
+      "publish_at_local": "2026-08-20T12:30",
+      "product_sku": "WN-MASCRAN-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "2026-08-20-01",
+      "producer_id": "A-claude",
+      "verdict": "PASS",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        }
+      ],
+      "reason_for_humans": "ok"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-16T18:22:20.385829"
+}

@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><style>{{ css }}
+.bg{position:absolute;inset:0;background:var(--cream)}
+.hdr{position:absolute;left:80px;top:80px;width:920px}
+.hdr .h1{font-size:80px;color:var(--forest)}
+.slide{position:absolute;left:80px;top:300px;width:920px;padding:56px 64px;min-height:560px}
+.slide .h2{font-size:56px;font-weight:700;color:var(--ink)}
+.slide .body{margin-top:24px;font-size:34px;line-height:1.4;color:#333}
+.pg{position:absolute;left:80px;bottom:60px;font-size:26px;color:var(--harvest)}
+</style></head><body><div class="canvas">
+<div class="bg"></div>
+<div class="hdr"><div class="h1">{{ f.title }}</div></div>
+<div class="slide tile"><div class="h2">{{ f.heading }}</div><div class="body">{{ f.body }}</div></div>
+<div class="pg caps">{{ f.page }}</div>
+<img class="logo" src="{{ logo_primary }}">
+</div></body></html>
