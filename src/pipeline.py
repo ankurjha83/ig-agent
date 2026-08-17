@@ -1,5 +1,5 @@
 """Orchestration used by both the CLI and the Discord bot."""
-import datetime as dt
+import datetime as dt, re
 from pathlib import Path
 from src.config import load_brand, producers_config
 from src.employees import producer as P, guardian as G, strategist as S
@@ -22,6 +22,9 @@ def produce_slot(brand: dict, slot: dict, revision_note=None, previous=None, onl
             f.setdefault("product_name", next((p["name"] for p in brand["_products"]["products"] if p["sku"] == slot.get("product_sku")), ""))
             f.setdefault("source", cap_d.get("body", "")[:200]); f.setdefault("sku", slot.get("product_sku"))
             f.setdefault("title", cap_d.get("hook", "")); f.setdefault("heading", ""); f.setdefault("body", cap_d.get("body", "")); f.setdefault("page", "1/1")
+            # strip HTML tags from text fields — LLM sometimes returns <br> in headlines
+            for _fld in ("headline", "subhead", "fact", "title", "heading", "body"):
+                if f.get(_fld): f[_fld] = re.sub(r'<[^>]+>', ' ', f[_fld]).strip()
             # illustration_svg must be inline SVG; reject file paths returned by the LLM
             if f.get("illustration_svg") and not str(f["illustration_svg"]).strip().startswith("<"):
                 f["illustration_svg"] = ""

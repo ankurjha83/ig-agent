@@ -6,7 +6,7 @@ from pathlib import Path
 import discord
 from discord import app_commands
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from src.config import load_brand, env, producers_config
+from src.config import load_brand, env, producers_config, ROOT
 from src import pipeline, store
 from src.integrations import instagram, media_hosting
 
@@ -99,6 +99,64 @@ async def revise_cmd(it: discord.Interaction, slot: str, note: str):
     r = await asyncio.to_thread(pipeline.produce_slot, brand, s, note, prev)
     await post_review(s, r); await it.followup.send("Revised.")
 
+@tree.command(name="adhoc", description="Create an ad-hoc post right now — no plan needed")
+@app_commands.describe(
+    sku="Product to post about",
+    hook="What you want to say / the angle for this post",
+    template="Template to use (default: product_hero)",
+    pillar="Content pillar (default: ingredient_truth)",
+)
+async def adhoc_cmd(it: discord.Interaction, sku: str, hook: str,
+                    template: str = "product_hero", pillar: str = "ingredient_truth"):
+
+    if str(it.user.id) not in APPROVERS:
+        await it.response.send_message("Not an approver.", ephemeral=True); return
+    await it.response.defer()
+    slot_id = f"adhoc-{dt.datetime.now().strftime('%Y%m%d-%H%M%S')}"
+    slot = {
+        "slot_id": slot_id,
+        "publish_at_local": dt.datetime.now().strftime("%Y-%m-%dT%H:%M"),
+        "pillar": pillar,
+        "format": "single_image",
+        "template_id": template,
+        "product_sku": sku,
+        "hook": hook,
+        "angle": "",
+        "asset_brief": "real product photo",
+        "cta": "Find us on Amazon India — link in bio.",
+        "success_metric": "saves",
+    }
+    r = await asyncio.to_thread(pipeline.produce_slot, brand, slot)
+    await post_review(slot, r)
+    await it.followup.send(f"Ad-hoc slot `{slot_id}` posted to #review.")
+
+@adhoc_cmd.autocomplete("sku")
+async def adhoc_sku_ac(it: discord.Interaction, current: str):
+    products = brand.get("_products", {}).get("products", [])
+    return [
+        app_commands.Choice(name=f"{p['name']} ({p['sku']})", value=p["sku"])
+        for p in products
+        if current.lower() in p["name"].lower() or current.lower() in p["sku"].lower()
+    ][:25]
+
+@adhoc_cmd.autocomplete("template")
+async def adhoc_template_ac(it: discord.Interaction, current: str):
+    templates = [t["id"] for t in brand["visual"]["templates"]["list"]]
+    return [app_commands.Choice(name=t, value=t) for t in templates if current.lower() in t][:25]
+
+@adhoc_cmd.autocomplete("pillar")
+async def adhoc_pillar_ac(it: discord.Interaction, current: str):
+    pillars = [p["id"] for p in brand["content"]["pillars"]]
+    return [app_commands.Choice(name=p, value=p) for p in pillars if current.lower() in p][:25]
+
+@tree.command(name="publish", description="Publish all approved-and-due slots to Instagram now")
+async def publish_cmd(it: discord.Interaction):
+    if str(it.user.id) not in APPROVERS:
+        await it.response.send_message("Not an approver.", ephemeral=True); return
+    await it.response.defer()
+    await publisher_tick()
+    await it.followup.send("Publish tick done — check #published and #ops.")
+
 async def publisher_tick():
     for p, rec in store.pending_publish(brand):
         due = dt.datetime.fromisoformat(rec["publish_at_local"]) if rec.get("publish_at_local") else dt.datetime.now()
@@ -106,7 +164,7 @@ async def publisher_tick():
         if env("ENABLE_PUBLISH", "false").lower() != "true":
             await ch("ops").send(f"(dry) would publish {rec['slot_id']} {rec['producer_id']}"); rec["status"] = "dry"; p.write_text(json.dumps(rec, indent=2)); continue
         try:
-            url = (await asyncio.to_thread(media_hosting.publish_files, [Path(rec["png"])]))[0]
+            url = (await asyncio.to_thread(media_hosting.publish_files, [ROOT / rec["png"]]))[0]
             res = await asyncio.to_thread(instagram.publish_image, brand["channels"]["instagram"]["ig_user_id"], url, rec["caption"])
             rec.update(status="published", published_at=dt.datetime.utcnow().isoformat(), **res)
             p.write_text(json.dumps(rec, indent=2)); store.log_publish(brand, rec)

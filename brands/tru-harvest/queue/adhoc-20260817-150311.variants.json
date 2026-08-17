@@ -1,0 +1,111 @@
+{
+  "slot_id": "adhoc-20260817-150311",
+  "variants": [
+    {
+      "slot_id": "adhoc-20260817-150311",
+      "version": 1,
+      "caption": {
+        "hook": "Healthy mix for those adhoc party nights!",
+        "body": "Mexican Mix: corn, jowar, oats puffs with pumpkin seeds. High protein, high fibre, zero cholesterol. Crunchy, spicy, and actually good for you.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "250g pouch of Why Not? Mexican Mix with colorful corn puffs, jowar puffs, oats puffs and pumpkin seeds visible against white background",
+        "full_text": "Healthy mix for those adhoc party nights!\n\nMexican Mix: corn, jowar, oats puffs with pumpkin seeds. High protein, high fibre, zero cholesterol. Crunchy, spicy, and actually good for you.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "assets/products/why-not/mexican-mix-front.jpg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "Party nights just got healthier",
+          "subhead": "High protein · High fibre · Zero cholesterol",
+          "image_1": "assets/products/why-not/mexican-mix-front.jpg",
+          "cta": "Find us on Amazon India",
+          "fact": "Healthy mix for those adhoc party nights!",
+          "product_name": "Mexican Mix",
+          "source": "Mexican Mix: corn, jowar, oats puffs with pumpkin seeds. High protein, high fibre, zero cholesterol. Crunchy, spicy, and actually good for you.",
+          "sku": "WN-MEXMIX-250",
+          "title": "Healthy mix for those adhoc party nights!",
+          "heading": "",
+          "body": "Mexican Mix: corn, jowar, oats puffs with pumpkin seeds. High protein, high fibre, zero cholesterol. Crunchy, spicy, and actually good for you.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "https://storage.truharvest.in/posts/adhoc-20260817-150311-v1.png"
+        ]
+      },
+      "reel": {},
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [
+        "listing.amazon_in ASIN/URL",
+        "listing.flipkart URL",
+        "allergens field"
+      ],
+      "notes_for_humans": "Using real product photo per packaging_rule. CTA says 'link in bio' so listing URLs flagged as NEEDS_DATA but not blocking — bio link assumed live.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "4e56c003ba078062",
+      "publish_at_local": "2026-08-17T15:03",
+      "product_sku": "WN-MEXMIX-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "adhoc-20260817-150311",
+      "producer_id": "A-claude",
+      "verdict": "BLOCKED",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "data",
+          "status": "blocked",
+          "detail": "['listing.amazon_in ASIN/URL', 'listing.flipkart URL', 'allergens field']"
+        }
+      ],
+      "reason_for_humans": "['listing.amazon_in ASIN/URL', 'listing.flipkart URL', 'allergens field']"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-17T06:03:23.856878"
+}

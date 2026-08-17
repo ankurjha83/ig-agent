@@ -1,0 +1,106 @@
+{
+  "slot_id": "adhoc-20260817-151557",
+  "variants": [
+    {
+      "slot_id": "adhoc-20260817-151557",
+      "version": 1,
+      "caption": {
+        "hook": "Corn puffs, pumpkin seeds, jowar and oats — crunchy layers that actually do something for you.",
+        "body": "Mexican Mix is high protein, high fibre, zero cholesterol. Not your regular namkeen. The pouch that doesn't judge your third handful.",
+        "cta": "Available on Amazon and Flipkart — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "Tru Harvest Why Not? Mexican Mix 250g pouch on wooden surface, green and white packaging showing multi-grain snack mix",
+        "full_text": "Corn puffs, pumpkin seeds, jowar and oats — crunchy layers that actually do something for you.\n\nMexican Mix is high protein, high fibre, zero cholesterol. Not your regular namkeen. The pouch that doesn't judge your third handful.\n\nAvailable on Amazon and Flipkart — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "assets/products/why-not/mexican-mix-front.jpg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "Not your regular namkeen.",
+          "subhead": "High protein · High fibre · Zero cholesterol",
+          "image_1": "assets/products/why-not/mexican-mix-front.jpg",
+          "cta": "Find us on Amazon & Flipkart",
+          "fact": "Corn puffs, pumpkin seeds, jowar and oats — crunchy layers that actually do something for you.",
+          "product_name": "Mexican Mix",
+          "source": "Mexican Mix is high protein, high fibre, zero cholesterol. Not your regular namkeen. The pouch that doesn't judge your third handful.",
+          "sku": "WN-MEXMIX-250",
+          "title": "Corn puffs, pumpkin seeds, jowar and oats — crunchy layers that actually do something for you.",
+          "heading": "",
+          "body": "Mexican Mix is high protein, high fibre, zero cholesterol. Not your regular namkeen. The pouch that doesn't judge your third handful.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "https://storage.truharvest.in/posts/adhoc-20260817-151557-v1.png"
+        ]
+      },
+      "reel": {
+        "duration_s": 0,
+        "overlays": [],
+        "cover_url": ""
+      },
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [],
+      "notes_for_humans": "Used real product photo per packaging rule. Changed hook to meet 125-char cut and match ingredient_truth pillar tone.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "068ecd99077e2bc7",
+      "publish_at_local": "2026-08-17T15:15",
+      "product_sku": "WN-MEXMIX-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "adhoc-20260817-151557",
+      "producer_id": "A-claude",
+      "verdict": "PASS",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        }
+      ],
+      "reason_for_humans": "ok"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-17T06:16:12.937171"
+}

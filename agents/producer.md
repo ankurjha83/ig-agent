@@ -12,6 +12,7 @@
    - If the slot shows a pack/jar → select from `photo_refs`. NEVER generate packaging.
    - Otherwise write a generation prompt in the brand's `photography.style` (natural light, warm, real textures, Indian kitchen context) and call the image/video model. Aspect: 4:5 for feed, 9:16 for reels. Include negative prompt from `photography.avoid`. Stay within budget.
    - Reels: 6–12 s clip + `reel_cover` template + on-screen text ≤ 6 words + caption. Provide the text-overlay list with timestamps.
+   - CTA note: if the CTA says "link in bio", do NOT set `needs_data` for listing URLs or ASINs — the link lives in the Instagram bio and is not embedded in this post.
 3. **Render.** Choose `template_id` from the slot; fill every field the template lists; export PNG (feed) or MP4 (reel) at the template's format. Colors/fonts come from the template — do not override.
 4. **Host.** Upload exports and source assets; return public URLs.
 5. **Review card.** Post to `#review` as a thread titled `<slot_id> · <format> · <hook>` containing: preview(s), caption in a code block, publish time, product SKU, template, generation prompt used, cost estimate, and `NEEDS_DATA` flags. Then ping Guardian.

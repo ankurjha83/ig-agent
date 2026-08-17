@@ -6,7 +6,9 @@ G = "https://graph.facebook.com/v21.0"
 def _tok(): return env("IG_LONG_LIVED_TOKEN")
 
 def publish_image(ig_user_id: str, image_url: str, caption: str) -> dict:
-    r = httpx.post(f"{G}/{ig_user_id}/media", data={"image_url": image_url, "caption": caption, "access_token": _tok()}, timeout=60); r.raise_for_status()
+    r = httpx.post(f"{G}/{ig_user_id}/media", data={"image_url": image_url, "caption": caption, "access_token": _tok()}, timeout=60)
+    if not r.is_success: raise RuntimeError(f"IG /media {r.status_code}: {r.text}")
+
     cid = r.json()["id"]
     _wait(cid)
     r = httpx.post(f"{G}/{ig_user_id}/media_publish", data={"creation_id": cid, "access_token": _tok()}, timeout=60); r.raise_for_status()

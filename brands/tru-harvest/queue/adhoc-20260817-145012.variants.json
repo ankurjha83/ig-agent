@@ -1,0 +1,102 @@
+{
+  "slot_id": "adhoc-20260817-145012",
+  "variants": [
+    {
+      "slot_id": "adhoc-20260817-145012",
+      "version": 1,
+      "caption": {
+        "hook": "THE 4 PM SNACK THAT DOESN'T NEED JUSTIFICATION!",
+        "body": "Masala Cranberry: sweet-tart cranberries with cumin and Himalayan pink salt. Crunchy, a little zingy, absolutely worth keeping in your desk drawer. 250g pouch, low fat, and never boring.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "250g pouch of Why Not? Masala Cranberry on a light wooden surface with scattered dried cranberries beside it.",
+        "full_text": "THE 4 PM SNACK THAT DOESN'T NEED JUSTIFICATION!\n\nMasala Cranberry: sweet-tart cranberries with cumin and Himalayan pink salt. Crunchy, a little zingy, absolutely worth keeping in your desk drawer. 250g pouch, low fat, and never boring.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "THE 4 PM SNACK THAT DOESN'T NEED JUSTIFICATION!",
+          "subhead": "Masala Cranberry — sweet, tart, and a little spicy",
+          "image_1": "product images/Copy of Dried Cranberries_Mockup Front.jpeg",
+          "cta": "Find us on Amazon India",
+          "fact": "THE 4 PM SNACK THAT DOESN'T NEED JUSTIFICATION!",
+          "product_name": "Masala Cranberry",
+          "source": "Masala Cranberry: sweet-tart cranberries with cumin and Himalayan pink salt. Crunchy, a little zingy, absolutely worth keeping in your desk drawer. 250g pouch, low fat, and never boring.",
+          "sku": "WN-MASCRAN-250",
+          "title": "THE 4 PM SNACK THAT DOESN'T NEED JUSTIFICATION!",
+          "heading": "",
+          "body": "Masala Cranberry: sweet-tart cranberries with cumin and Himalayan pink salt. Crunchy, a little zingy, absolutely worth keeping in your desk drawer. 250g pouch, low fat, and never boring.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "https://storage.truharvest.in/posts/adhoc-20260817-145012-v1.png"
+        ]
+      },
+      "reel": {},
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [],
+      "notes_for_humans": "Used real product photo per packaging rule. Template renders at 1080x1350. Ready for Guardian review.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "b3d3476b214e999a",
+      "publish_at_local": "2026-08-17T14:50",
+      "product_sku": "WN-MASCRAN-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "adhoc-20260817-145012",
+      "producer_id": "A-claude",
+      "verdict": "PASS",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        }
+      ],
+      "reason_for_humans": "ok"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-17T05:50:26.589932"
+}

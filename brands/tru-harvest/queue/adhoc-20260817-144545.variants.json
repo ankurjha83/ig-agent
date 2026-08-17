@@ -1,0 +1,113 @@
+{
+  "slot_id": "adhoc-20260817-144545",
+  "variants": [
+    {
+      "slot_id": "adhoc-20260817-144545",
+      "version": 1,
+      "caption": {
+        "hook": "The 4 PM snack that doesn't need justification",
+        "body": "Masala Cranberry from Why Not? — dried cranberries tossed with cumin and Himalayan pink salt. Low fat, actually crunchy, zero guilt required. 250g pouch, ready when you are.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "250g pouch of Why Not? Masala Cranberry on white background showing front label with dried cranberries visible through transparent window",
+        "full_text": "The 4 PM snack that doesn't need justification\n\nMasala Cranberry from Why Not? — dried cranberries tossed with cumin and Himalayan pink salt. Low fat, actually crunchy, zero guilt required. 250g pouch, ready when you are.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "The 4 PM snack that doesn't need justification",
+          "subhead": "Masala Cranberry · Low Fat · Cumin & Pink Salt",
+          "image_1": "product images/Copy of Dried Cranberries_Mockup Front.jpeg",
+          "cta": "Available on Amazon India",
+          "fact": "The 4 PM snack that doesn't need justification",
+          "product_name": "Masala Cranberry",
+          "source": "Masala Cranberry from Why Not? — dried cranberries tossed with cumin and Himalayan pink salt. Low fat, actually crunchy, zero guilt required. 250g pouch, ready when you are.",
+          "sku": "WN-MASCRAN-250",
+          "title": "The 4 PM snack that doesn't need justification",
+          "heading": "",
+          "body": "Masala Cranberry from Why Not? — dried cranberries tossed with cumin and Himalayan pink salt. Low fat, actually crunchy, zero guilt required. 250g pouch, ready when you are.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "renders/adhoc-20260817-144545-v1-product_hero.png"
+        ]
+      },
+      "reel": {
+        "duration_s": 0,
+        "overlays": [],
+        "cover_url": ""
+      },
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [
+        "listing.amazon_in_asin — needed for accurate CTA link verification"
+      ],
+      "notes_for_humans": "Used library product photo per packaging_rule. Template fills brand colors and Why Not? accent palette. Ready for Guardian review.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "ecfcfd15eb466b6a",
+      "publish_at_local": "2026-08-17T14:45",
+      "product_sku": "WN-MASCRAN-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "adhoc-20260817-144545",
+      "producer_id": "A-claude",
+      "verdict": "BLOCKED",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "data",
+          "status": "blocked",
+          "detail": "['listing.amazon_in_asin — needed for accurate CTA link verification']"
+        }
+      ],
+      "reason_for_humans": "['listing.amazon_in_asin — needed for accurate CTA link verification']"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-17T05:45:59.516437"
+}

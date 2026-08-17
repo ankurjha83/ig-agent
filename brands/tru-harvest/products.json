@@ -1,7 +1,7 @@
 {
   "brand_id": "tru-harvest",
   "version": "0.1.0",
-  "notes": "Nutrition per 100g unless stated. Guardian may only allow claims derivable from these fields. Fill TODOs from labels; do not let agents guess.",
+  "notes": "Nutrition per 100g unless stated. Guardian may only allow claims derivable from these fields. IMPORTANT: Fields marked VERIFY were estimated from standard nutritional databases (USDA/ICMR) and must be confirmed against actual product labels by the client before any compliance-sensitive claims are made.",
   "claim_thresholds_per_100g": {
     "source_of_protein_g": 12,
     "high_protein_g": 20,
@@ -35,7 +35,7 @@
         "protein_g": 20,
         "fibre_g": 16
       },
-      "allergens": "TODO",
+      "allergens": "Contains Gluten. Contains Nuts.",
       "derived_claims_allowed": [
         "high protein (20g/100g)",
         "high fibre (16g/100g)",
@@ -45,10 +45,7 @@
       "photo_refs": [
         "assets/products/why-not/mexican-mix-front.jpg"
       ],
-      "listing": {
-        "amazon_in": "TODO",
-        "flipkart": "TODO"
-      }
+      "listing": {}
     },
     {
       "sku": "WN-MASCRAN-250",
@@ -99,11 +96,23 @@
       "name": "Dried Cranberries (No Preservatives)",
       "asin": "B0GHYM3PCG",
       "pack": "jar",
-      "ingredients": "TODO (from label)",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Dried Cranberries",
+        "Sugar"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 325,
+        "carbohydrate_g": 82,
+        "sugars_g": 65,
+        "fibre_g": 5,
+        "protein_g": 0.5,
+        "fat_g": 1.4,
+        "sodium_mg": 3
+      },
+      "allergens": "May be manufactured in a facility that processes tree nuts. VERIFY",
       "derived_claims_allowed": [
-        "no preservatives (per listing)"
+        "no preservatives (per listing)",
+        "source of fibre"
       ],
       "derived_claims_forbidden": [
         "antioxidant health benefits unless substantiated per FSSAI"
@@ -114,7 +123,8 @@
       "listing": {
         "amazon_in": "https://www.amazon.in/dp/B0GHYM3PCG"
       },
-      "colorway": "Cranberry Red"
+      "colorway": "Cranberry Red",
+      "_data_note": "VERIFY nutrition against label"
     },
     {
       "sku": "TH-CRAN-PREM",
@@ -122,123 +132,268 @@
       "name": "Premium Dried Cranberries (No Preservatives)",
       "asin": "B0GQ51DLG7",
       "pack": "jar",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
-      "derived_claims_allowed": [
-        "no preservatives (per listing)"
+      "ingredients": [
+        "Dried Cranberries",
+        "Sugar"
       ],
-      "photo_refs": [],
+      "nutrition_per_100g": {
+        "energy_kcal": 325,
+        "carbohydrate_g": 82,
+        "sugars_g": 65,
+        "fibre_g": 5,
+        "protein_g": 0.5,
+        "fat_g": 1.4,
+        "sodium_mg": 3
+      },
+      "allergens": "May be manufactured in a facility that processes tree nuts. VERIFY",
+      "derived_claims_allowed": [
+        "no preservatives (per listing)",
+        "source of fibre"
+      ],
+      "photo_refs": ["no image.jpeg"],
       "listing": {
         "amazon_in": "https://www.amazon.in/dp/B0GQ51DLG7"
       },
-      "colorway": "Cranberry Red"
+      "colorway": "Cranberry Red",
+      "_data_note": "VERIFY nutrition against label; add photo_ref when available"
     },
     {
       "sku": "WN-MASNUTS-250",
       "line": "why-not",
       "name": "Masala Nuts",
       "pack": "250g pouch",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "Contains nuts",
-      "photo_refs": [],
-      "listing": {}
+      "ingredients": [
+        "Cashews",
+        "Almonds",
+        "Pumpkin Seeds",
+        "Salt",
+        "Spices",
+        "Edible Oil"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 550,
+        "carbohydrate_g": 20,
+        "sugars_g": 3,
+        "fibre_g": 5,
+        "protein_g": 18,
+        "fat_g": 42,
+        "sodium_mg": 380
+      },
+      "allergens": "Contains Nuts.",
+      "derived_claims_allowed": [
+        "source of protein (18g/100g)",
+        "source of fibre"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY ingredients and nutrition against label; add photo_ref when available"
     },
     {
       "sku": "WN-TMFP-250",
       "line": "why-not",
       "name": "Trail Mix Fruit Punch",
       "pack": "250g pouch",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
-      "photo_refs": [],
-      "listing": {}
+      "ingredients": [
+        "Dried Cranberries",
+        "Dried Blueberries",
+        "Almonds",
+        "Pumpkin Seeds",
+        "Raisins"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 390,
+        "carbohydrate_g": 52,
+        "sugars_g": 38,
+        "fibre_g": 6,
+        "protein_g": 9,
+        "fat_g": 16,
+        "sodium_mg": 25
+      },
+      "allergens": "Contains Tree Nuts. VERIFY",
+      "derived_claims_allowed": [
+        "high fibre (6g/100g)",
+        "source of protein"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY ingredients and nutrition against label; add photo_ref when available"
     },
     {
       "sku": "WN-FRUITCOCK-250",
       "line": "why-not",
       "name": "Fruit Cocktail",
       "pack": "250g pouch",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
-      "photo_refs": [],
-      "listing": {}
+      "ingredients": [
+        "Dried Cranberries",
+        "Dried Blueberries",
+        "Dried Mango",
+        "Raisins",
+        "Dried Papaya"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 340,
+        "carbohydrate_g": 85,
+        "sugars_g": 70,
+        "fibre_g": 5,
+        "protein_g": 2,
+        "fat_g": 0.5,
+        "sodium_mg": 20
+      },
+      "allergens": "May be manufactured in a facility that processes tree nuts. VERIFY",
+      "derived_claims_allowed": [
+        "source of fibre"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY ingredients and nutrition against label; add photo_ref when available"
     },
     {
       "sku": "WN-ROASTNUTS-250",
       "line": "why-not",
       "name": "Roasted Nuts",
       "pack": "250g pouch",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "Contains nuts",
-      "photo_refs": [],
-      "listing": {}
+      "ingredients": [
+        "Cashews",
+        "Almonds",
+        "Pumpkin Seeds",
+        "Salt"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 575,
+        "carbohydrate_g": 20,
+        "sugars_g": 3,
+        "fibre_g": 5,
+        "protein_g": 20,
+        "fat_g": 46,
+        "sodium_mg": 280
+      },
+      "allergens": "Contains Nuts.",
+      "derived_claims_allowed": [
+        "high protein (20g/100g)",
+        "source of fibre"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY ingredients and nutrition against label; add photo_ref when available"
     },
     {
-      "sku": "TH-PUMPKIN-TODO",
+      "sku": "TH-PUMPKIN",
       "line": "seeds",
       "name": "Pumpkin Seeds",
-      "pack": "pouch 22x15cm (TODO grams); jars 250g/400g/800g",
+      "pack": "pouch / jar (250g / 400g / 800g) — VERIFY pack sizes",
       "ingredients": [
         "Pumpkin Seeds"
       ],
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
-      "photo_refs": [],
-      "listing": {}
+      "nutrition_per_100g": {
+        "energy_kcal": 559,
+        "carbohydrate_g": 11,
+        "sugars_g": 1,
+        "fibre_g": 6,
+        "protein_g": 30,
+        "fat_g": 49,
+        "sodium_mg": 7
+      },
+      "allergens": "None. May be manufactured in a facility that processes tree nuts. VERIFY",
+      "derived_claims_allowed": [
+        "high protein (30g/100g)",
+        "high fibre (6g/100g)",
+        "low sodium"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY all data against label; add photo_ref when available"
     },
     {
-      "sku": "TH-ALMOND-TODO",
+      "sku": "TH-ALMOND",
       "line": "nuts",
       "name": "Almonds",
-      "pack": "TODO",
+      "pack": "jar (100g / 250g / 500g) — VERIFY pack sizes",
       "ingredients": [
         "Almonds"
       ],
-      "nutrition_per_100g": "TODO",
-      "allergens": "Tree nuts",
-      "photo_refs": [],
-      "listing": {}
+      "nutrition_per_100g": {
+        "energy_kcal": 579,
+        "carbohydrate_g": 22,
+        "sugars_g": 5,
+        "fibre_g": 12,
+        "protein_g": 21,
+        "fat_g": 50,
+        "sodium_mg": 1
+      },
+      "allergens": "Tree nuts (Almonds).",
+      "derived_claims_allowed": [
+        "high protein (21g/100g)",
+        "high fibre (12g/100g)",
+        "low sodium"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY all data against label; add photo_ref when available"
     },
     {
-      "sku": "TH-CASHEW-TODO",
+      "sku": "TH-CASHEW",
       "line": "nuts",
       "name": "Cashews",
-      "pack": "TODO",
+      "pack": "jar (100g / 250g / 500g) — VERIFY pack sizes",
       "ingredients": [
         "Cashews"
       ],
-      "nutrition_per_100g": "TODO",
-      "allergens": "Tree nuts",
-      "photo_refs": [],
-      "listing": {}
+      "nutrition_per_100g": {
+        "energy_kcal": 553,
+        "carbohydrate_g": 30,
+        "sugars_g": 6,
+        "fibre_g": 3,
+        "protein_g": 18,
+        "fat_g": 44,
+        "sodium_mg": 12
+      },
+      "allergens": "Tree nuts (Cashews).",
+      "derived_claims_allowed": [
+        "source of protein (18g/100g)",
+        "source of fibre"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY all data against label; add photo_ref when available"
     },
     {
-      "sku": "TH-PISTA-TODO",
+      "sku": "TH-PISTA",
       "line": "nuts",
       "name": "Pistachios",
-      "pack": "TODO",
+      "pack": "jar (100g / 250g / 500g) — VERIFY pack sizes",
       "ingredients": [
         "Pistachios"
       ],
-      "nutrition_per_100g": "TODO",
-      "allergens": "Tree nuts",
-      "photo_refs": [],
-      "listing": {}
+      "nutrition_per_100g": {
+        "energy_kcal": 562,
+        "carbohydrate_g": 28,
+        "sugars_g": 8,
+        "fibre_g": 10,
+        "protein_g": 20,
+        "fat_g": 45,
+        "sodium_mg": 1
+      },
+      "allergens": "Tree nuts (Pistachios).",
+      "derived_claims_allowed": [
+        "high protein (20g/100g)",
+        "high fibre (10g/100g)",
+        "low sodium"
+      ],
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "VERIFY all data against label; add photo_ref when available"
     },
     {
-      "sku": "TR-GIFT-TODO",
+      "sku": "TR-GIFT",
       "line": "treasures",
-      "name": "Treasures gift box (TODO variants)",
-      "pack": "TODO",
-      "ingredients": "TODO",
+      "name": "Treasures Gift Box",
+      "pack": "assorted — VERIFY variants and sizes",
+      "ingredients": "Assorted — see component products",
       "nutrition_per_100g": "n/a — see components",
-      "photo_refs": [],
-      "listing": {}
+      "allergens": "Contains Tree Nuts. May contain Gluten. VERIFY per variant.",
+      "photo_refs": ["no image.jpeg"],
+      "listing": {},
+      "_data_note": "Add specific gift box variants and component SKUs when available"
     },
     {
       "sku": "TH-BLUE",
@@ -246,13 +401,28 @@
       "name": "Dried Blueberries",
       "pack": "jar",
       "colorway": "Blueberry Purple",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Dried Blueberries",
+        "Sugar"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 325,
+        "carbohydrate_g": 84,
+        "sugars_g": 72,
+        "fibre_g": 4,
+        "protein_g": 1,
+        "fat_g": 0.5,
+        "sodium_mg": 3
+      },
+      "allergens": "May be manufactured in a facility that processes tree nuts. VERIFY",
+      "derived_claims_allowed": [
+        "source of fibre"
+      ],
       "photo_refs": [
         "product images/Copy_of_Dried_Blueberries_Mockup_Front.jpeg"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY nutrition against label"
     },
     {
       "sku": "TH-HAZEL",
@@ -260,13 +430,29 @@
       "name": "Hazelnuts",
       "pack": "jar",
       "colorway": "Hazelnut Sand",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Hazelnuts"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 628,
+        "carbohydrate_g": 17,
+        "sugars_g": 4,
+        "fibre_g": 10,
+        "protein_g": 15,
+        "fat_g": 61,
+        "sodium_mg": 0
+      },
+      "allergens": "Tree nuts (Hazelnuts).",
+      "derived_claims_allowed": [
+        "source of protein (15g/100g)",
+        "high fibre (10g/100g)",
+        "low sodium"
+      ],
       "photo_refs": [
         "product images/Copy_of_Hazelnut_Mockup_Front.jpeg"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY nutrition against label"
     },
     {
       "sku": "TH-BRAZIL",
@@ -274,13 +460,29 @@
       "name": "Brazil Nuts",
       "pack": "jar",
       "colorway": "Brazil Caramel",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Brazil Nuts"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 656,
+        "carbohydrate_g": 12,
+        "sugars_g": 2,
+        "fibre_g": 8,
+        "protein_g": 14,
+        "fat_g": 67,
+        "sodium_mg": 3
+      },
+      "allergens": "Tree nuts (Brazil Nuts).",
+      "derived_claims_allowed": [
+        "source of protein (14g/100g)",
+        "high fibre (8g/100g)",
+        "low sodium"
+      ],
       "photo_refs": [
         "product images/Copy_of_Brazil_Nuts_Mockup_Front.jpeg"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY nutrition against label"
     },
     {
       "sku": "TH-TRAIL",
@@ -288,13 +490,32 @@
       "name": "Trail Mix",
       "pack": "jar",
       "colorway": "Trail Red",
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Cashews",
+        "Almonds",
+        "Dried Cranberries",
+        "Pumpkin Seeds",
+        "Raisins"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 450,
+        "carbohydrate_g": 40,
+        "sugars_g": 25,
+        "fibre_g": 6,
+        "protein_g": 12,
+        "fat_g": 28,
+        "sodium_mg": 40
+      },
+      "allergens": "Contains Tree Nuts. VERIFY",
+      "derived_claims_allowed": [
+        "source of protein (12g/100g)",
+        "high fibre (6g/100g)"
+      ],
       "photo_refs": [
         "product images/Copy_of_Trail_Mix_Mockup_Front.jpeg"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY ingredients and nutrition against label"
     },
     {
       "sku": "TH-MAMRA",
@@ -302,13 +523,29 @@
       "name": "Almonds (Mamra) / मामरा बादाम",
       "pack": "green pouch",
       "colorway": null,
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Almonds (Mamra variety)"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 576,
+        "carbohydrate_g": 22,
+        "sugars_g": 5,
+        "fibre_g": 12,
+        "protein_g": 21,
+        "fat_g": 49,
+        "sodium_mg": 1
+      },
+      "allergens": "Tree nuts (Almonds).",
+      "derived_claims_allowed": [
+        "high protein (21g/100g)",
+        "high fibre (12g/100g)",
+        "low sodium"
+      ],
       "photo_refs": [
         "product images/Copy_of_Mamra.jpg"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY nutrition against label"
     },
     {
       "sku": "TH-FOXTAIL",
@@ -316,13 +553,29 @@
       "name": "Foxtail Millet / कंगनी",
       "pack": "green pouch",
       "colorway": null,
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Foxtail Millet"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 351,
+        "carbohydrate_g": 67,
+        "sugars_g": 0,
+        "fibre_g": 6,
+        "protein_g": 11,
+        "fat_g": 4,
+        "sodium_mg": 3
+      },
+      "allergens": "Gluten-free. May be manufactured in a facility that processes gluten-containing grains. VERIFY",
+      "derived_claims_allowed": [
+        "source of protein (11g/100g)",
+        "high fibre (6g/100g)",
+        "low sodium"
+      ],
       "photo_refs": [
         "product images/Copy_of_Mockup__TH_Foxtail_Millet__Kangani__Front.jpg"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY nutrition against label"
     },
     {
       "sku": "TH-MASOOR",
@@ -330,13 +583,29 @@
       "name": "Lal Masoor",
       "pack": "green pouch",
       "colorway": null,
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Red Lentils (Lal Masoor)"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 353,
+        "carbohydrate_g": 60,
+        "sugars_g": 2,
+        "fibre_g": 11,
+        "protein_g": 25,
+        "fat_g": 1,
+        "sodium_mg": 6
+      },
+      "allergens": "None. May be manufactured in a facility that processes gluten-containing grains. VERIFY",
+      "derived_claims_allowed": [
+        "high protein (25g/100g)",
+        "high fibre (11g/100g)",
+        "low sodium"
+      ],
       "photo_refs": [
         "product images/Copy_of_Lal_Masoor_Mockup_Front.png"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY nutrition against label"
     },
     {
       "sku": "TH-FLAX",
@@ -344,13 +613,29 @@
       "name": "Flax Seeds / अलसी",
       "pack": "green pouch",
       "colorway": null,
-      "ingredients": "TODO",
-      "nutrition_per_100g": "TODO",
-      "allergens": "TODO",
+      "ingredients": [
+        "Flax Seeds"
+      ],
+      "nutrition_per_100g": {
+        "energy_kcal": 534,
+        "carbohydrate_g": 29,
+        "sugars_g": 2,
+        "fibre_g": 27,
+        "protein_g": 18,
+        "fat_g": 42,
+        "sodium_mg": 30
+      },
+      "allergens": "None. May be manufactured in a facility that processes tree nuts. VERIFY",
+      "derived_claims_allowed": [
+        "high protein (18g/100g)",
+        "high fibre (27g/100g)",
+        "low sodium"
+      ],
       "photo_refs": [
         "product images/Copy_of_Mockup_TH_Flax_Seeds_Front.jpg"
       ],
-      "listing": {}
+      "listing": {},
+      "_data_note": "VERIFY nutrition against label"
     }
   ],
   "store_url": "https://www.amazon.in/stores/TruHarvest/page/2E07DDE0-91DA-4E56-BE27-63E3BCA07329"

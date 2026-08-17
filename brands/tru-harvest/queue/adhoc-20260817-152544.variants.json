@@ -1,0 +1,102 @@
+{
+  "slot_id": "adhoc-20260817-152544",
+  "variants": [
+    {
+      "slot_id": "adhoc-20260817-152544",
+      "version": 1,
+      "caption": {
+        "hook": "Late-night party? Skip the guilt, grab the crunch.",
+        "body": "Mexican Mix: corn, jowar, oats puffs + pumpkin seeds. High protein (20g), high fibre (16g), zero cholesterol. The kind of snack that keeps up with you.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "250g pouch of Why Not? Mexican Mix showing colorful corn puffs, jowar, oats and pumpkin seeds on label.",
+        "full_text": "Late-night party? Skip the guilt, grab the crunch. 🌽\n\nMexican Mix: corn, jowar, oats puffs + pumpkin seeds. High protein (20g), high fibre (16g), zero cholesterol. The kind of snack that keeps up with you.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "assets/products/why-not/mexican-mix-front.jpg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "LATE-NIGHT PARTY?<br>SKIP THE GUILT,<br>GRAB THE CRUNCH.",
+          "subhead": "High protein • High fibre • Zero cholesterol",
+          "image_1": "assets/products/why-not/mexican-mix-front.jpg",
+          "cta": "Find us on Amazon India — link in bio.",
+          "fact": "Late-night party? Skip the guilt, grab the crunch.",
+          "product_name": "Mexican Mix",
+          "source": "Mexican Mix: corn, jowar, oats puffs + pumpkin seeds. High protein (20g), high fibre (16g), zero cholesterol. The kind of snack that keeps up with you.",
+          "sku": "WN-MEXMIX-250",
+          "title": "Late-night party? Skip the guilt, grab the crunch.",
+          "heading": "",
+          "body": "Mexican Mix: corn, jowar, oats puffs + pumpkin seeds. High protein (20g), high fibre (16g), zero cholesterol. The kind of snack that keeps up with you.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "https://cdn.truharvest.in/posts/adhoc-20260817-152544-v1.png"
+        ]
+      },
+      "reel": {},
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [],
+      "notes_for_humans": "Real product photo from library. Template uses Why Not? system (bold caps, playful). CTA points to Instagram bio link—no Amazon URL needed in post.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "de89fd2ddbc7070d",
+      "publish_at_local": "2026-08-17T15:25",
+      "product_sku": "WN-MEXMIX-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "adhoc-20260817-152544",
+      "producer_id": "A-claude",
+      "verdict": "PASS",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        }
+      ],
+      "reason_for_humans": "ok"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-17T06:25:59.187221"
+}

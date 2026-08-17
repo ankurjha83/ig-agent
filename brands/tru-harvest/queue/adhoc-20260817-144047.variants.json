@@ -1,0 +1,109 @@
+{
+  "slot_id": "adhoc-20260817-144047",
+  "variants": [
+    {
+      "slot_id": "adhoc-20260817-144047",
+      "version": 1,
+      "caption": {
+        "hook": "Sweet, tangy, with a little masala kick — snacking just got interesting.",
+        "body": "Dried cranberries meet Himalayan pink salt and cumin in this pouch. Toss them on your yogurt, pack them for the commute, or just eat them straight. Low fat, high on flavour.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#IndianSnacks",
+          "#OfficeSnacks"
+        ],
+        "alt_text": "250g pouch of Why Not? Masala Cranberry on a wooden surface with scattered dried cranberries.",
+        "full_text": "Sweet, tangy, with a little masala kick — snacking just got interesting. 🌶️\n\nDried cranberries meet Himalayan pink salt and cumin in this pouch. Toss them on your yogurt, pack them for the commute, or just eat them straight. Low fat, high on flavour.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #IndianSnacks #OfficeSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "product images/Copy of Dried Cranberries_Mockup Front.jpeg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "Sweet. Tangy. Masala.",
+          "subhead": "Why Not? Masala Cranberry — 250g",
+          "image_1": "product images/Copy of Dried Cranberries_Mockup Front.jpeg",
+          "cta": "On Amazon & Flipkart",
+          "fact": "Sweet, tangy, with a little masala kick — snacking just got interesting.",
+          "product_name": "Masala Cranberry",
+          "source": "Dried cranberries meet Himalayan pink salt and cumin in this pouch. Toss them on your yogurt, pack them for the commute, or just eat them straight. Low fat, high on flavour.",
+          "sku": "WN-MASCRAN-250",
+          "title": "Sweet, tangy, with a little masala kick — snacking just got interesting.",
+          "heading": "",
+          "body": "Dried cranberries meet Himalayan pink salt and cumin in this pouch. Toss them on your yogurt, pack them for the commute, or just eat them straight. Low fat, high on flavour.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "renders/adhoc-20260817-144047-v1.png"
+        ]
+      },
+      "reel": {},
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [
+        "NEEDS_DATA: slot.hook was 'COMPLETYELY NATURAL PRODUCT' — spelling error and generic; rewrote hook per brand voice. slot.template_id was '1' — mapped to 'product_hero'. slot.pillar was '1' — mapped to 'ingredient_truth' pillar per brand strategy."
+      ],
+      "notes_for_humans": "Used existing product photo per packaging rule. Replaced generic hook with flavour-focused line per Why Not? voice. Template fields populated; export ready for Guardian review.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "6df1ea4cc2626be5",
+      "publish_at_local": "2026-08-17T14:40",
+      "product_sku": "WN-MASCRAN-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "adhoc-20260817-144047",
+      "producer_id": "A-claude",
+      "verdict": "BLOCKED",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "data",
+          "status": "blocked",
+          "detail": "[\"NEEDS_DATA: slot.hook was 'COMPLETYELY NATURAL PRODUCT' — spelling error and generic; rewrote hook per brand voice. slot.template_id was '1' — mapped to 'product_hero'. slot.pillar was '1' — mapped to 'ingredient_truth' pillar per brand strategy.\"]"
+        }
+      ],
+      "reason_for_humans": "[\"NEEDS_DATA: slot.hook was 'COMPLETYELY NATURAL PRODUCT' — spelling error and generic; rewrote hook per brand voice. slot.template_id was '1' — mapped to 'product_hero'. slot.pillar was '1' — mapped to 'ingredient_truth' pillar per brand strategy.\"]"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-17T05:41:03.410590"
+}

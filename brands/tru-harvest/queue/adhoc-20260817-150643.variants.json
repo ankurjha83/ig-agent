@@ -1,0 +1,115 @@
+{
+  "slot_id": "adhoc-20260817-150643",
+  "variants": [
+    {
+      "slot_id": "adhoc-20260817-150643",
+      "version": 1,
+      "caption": {
+        "hook": "Healthy Mix for the adhoc party nights!",
+        "body": "Mexican Mix brings corn puffs, jowar, oats, and pumpkin seeds together in one crunchy pouch. High protein, high fibre, zero cholesterol — because your 4pm (or 9pm) deserves better. Pop. Crunch. Repeat.",
+        "cta": "Find us on Amazon India — link in bio.",
+        "hashtags": [
+          "#TruHarvest",
+          "#100PercentNaturalFoods",
+          "#WhyNotSnacks",
+          "#HealthySnacking",
+          "#OfficeSnacks",
+          "#IndianSnacks"
+        ],
+        "alt_text": "Tru Harvest Why Not? Mexican Mix 250g pouch on wooden surface, showing corn puffs, jowar puffs, and pumpkin seeds spilling out.",
+        "full_text": "Healthy Mix for the adhoc party nights!\n\nMexican Mix brings corn puffs, jowar, oats, and pumpkin seeds together in one crunchy pouch. High protein, high fibre, zero cholesterol — because your 4pm (or 9pm) deserves better. Pop. Crunch. Repeat.\n\nFind us on Amazon India — link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks"
+      },
+      "assets": [
+        {
+          "kind": "photo_ref",
+          "source": "library",
+          "prompt": "",
+          "url": "assets/products/why-not/mexican-mix-front.jpg"
+        }
+      ],
+      "render": {
+        "template_id": "product_hero",
+        "fields": {
+          "headline": "POP · CRUNCH · REPEAT",
+          "subhead": "Mexican Mix — High Protein, High Fibre, Zero Cholesterol",
+          "image_1": "assets/products/why-not/mexican-mix-front.jpg",
+          "cta": "Available on Amazon India",
+          "fact": "Healthy Mix for the adhoc party nights!",
+          "product_name": "Mexican Mix",
+          "source": "Mexican Mix brings corn puffs, jowar, oats, and pumpkin seeds together in one crunchy pouch. High protein, high fibre, zero cholesterol — because your 4pm (or 9pm) deserves better. Pop. Crunch. Repeat",
+          "sku": "WN-MEXMIX-250",
+          "title": "Healthy Mix for the adhoc party nights!",
+          "heading": "",
+          "body": "Mexican Mix brings corn puffs, jowar, oats, and pumpkin seeds together in one crunchy pouch. High protein, high fibre, zero cholesterol — because your 4pm (or 9pm) deserves better. Pop. Crunch. Repeat.",
+          "page": "1/1"
+        },
+        "export_urls": [
+          "renders/adhoc-20260817-150643-v1.png"
+        ]
+      },
+      "reel": {
+        "duration_s": 0,
+        "overlays": [],
+        "cover_url": ""
+      },
+      "cost_estimate": {
+        "images": 0,
+        "video_seconds": 0
+      },
+      "needs_data": [
+        "allergens field is TODO in product record",
+        "amazon_in listing URL is TODO",
+        "flipkart listing URL is TODO"
+      ],
+      "notes_for_humans": "Used real product photo per brand packaging rule. CTA points to bio link (no direct listing URL needed in post). Allergen disclosure flagged but not blocking — confirm before publish if needed.",
+      "producer_id": "A-claude",
+      "model": "anthropic:claude-sonnet-4-5",
+      "content_hash": "3e5f4dddef7bdd03",
+      "publish_at_local": "2026-08-17T15:06",
+      "product_sku": "WN-MEXMIX-250"
+    }
+  ],
+  "guardian": [
+    {
+      "slot_id": "adhoc-20260817-150643",
+      "producer_id": "A-claude",
+      "verdict": "BLOCKED",
+      "checks": [
+        {
+          "name": "claims",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "template",
+          "status": "pass",
+          "detail": "product_hero"
+        },
+        {
+          "name": "limits",
+          "status": "pass",
+          "detail": ""
+        },
+        {
+          "name": "data",
+          "status": "blocked",
+          "detail": "['allergens field is TODO in product record', 'amazon_in listing URL is TODO', 'flipkart listing URL is TODO']"
+        }
+      ],
+      "reason_for_humans": "['allergens field is TODO in product record', 'amazon_in listing URL is TODO', 'flipkart listing URL is TODO']"
+    },
+    {
+      "producer_id": "B-qwen",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    },
+    {
+      "producer_id": "C-llama",
+      "verdict": "BLOCKED",
+      "checks": [],
+      "reason_for_humans": "producer error: [Errno 61] Connection refused"
+    }
+  ],
+  "created": "2026-08-17T06:06:57.005519"
+}

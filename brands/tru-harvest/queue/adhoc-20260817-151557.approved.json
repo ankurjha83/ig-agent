@@ -1,0 +1,14 @@
+{
+  "slot_id": "adhoc-20260817-151557",
+  "producer_id": "A-claude",
+  "approver": "700765101510099025",
+  "approved_at": "2026-08-17T06:16:28.291979",
+  "content_hash": "068ecd99077e2bc7",
+  "caption": "Corn puffs, pumpkin seeds, jowar and oats \u2014 crunchy layers that actually do something for you.\n\nMexican Mix is high protein, high fibre, zero cholesterol. Not your regular namkeen. The pouch that doesn't judge your third handful.\n\nAvailable on Amazon and Flipkart \u2014 link in bio.\n\n#TruHarvest #100PercentNaturalFoods #WhyNotSnacks #HealthySnacking #OfficeSnacks #IndianSnacks",
+  "png": "public/media/tru-harvest/adhoc-20260817-151557/A-claude-v1.png",
+  "publish_at_local": "2026-08-17T15:15",
+  "template_id": "product_hero",
+  "rejected_in_favour": [],
+  "status": "failed",
+  "fail_reason": "Instagram cached 404 from GitHub Pages deployment lag; re-submit via /adhoc"
+}
